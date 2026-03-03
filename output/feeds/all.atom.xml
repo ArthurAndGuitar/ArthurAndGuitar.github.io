@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Resume</title><link href="ArthurAndGuitar.github.io/" rel="alternate"/><link href="ArthurAndGuitar.github.io/feeds/all.atom.xml" rel="self"/><id>ArthurAndGuitar.github.io/</id><updated>2026-03-02T00:00:00-06:00</updated><entry><title>test</title><link href="ArthurAndGuitar.github.io/test.html" rel="alternate"/><published>2026-03-02T00:00:00-06:00</published><updated>2026-03-02T00:00:00-06:00</updated><author><name>test</name></author><id>tag:None,2026-03-02:ArthurAndGuitar.github.io/test.html</id><content type="html">&lt;p&gt;testing &lt;/p&gt;
-&lt;h2&gt;helloghp-import output -b pages&lt;/h2&gt;
-&lt;p&gt;update&lt;/p&gt;
-&lt;p&gt;test&lt;/p&gt;</content><category term="misc"/></entry></feed>
