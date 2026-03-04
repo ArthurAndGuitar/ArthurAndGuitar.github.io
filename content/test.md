@@ -2,10 +2,6 @@ title: test
 Author: test
 date: 2026/03/02
 
-testing 
+> [!IMPORTANT]
+> Complete technical documentation, build guides, and integration patterns are available in the [Wiki](./docs/wiki/).
 
-## helloghp-import output -b pages
-
-update
-
-test
