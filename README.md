@@ -90,29 +90,29 @@ pelican-quickstart
 
 - The console will prompt you with a few questions.
 
-> What will be the title of this web site? 
- - Reply with: [Enter the name of your website]
+What will be the title of this web site? 
+	> Reply with: [Enter the name of your website]
 	
-> Who will be the author of this web site? 
-  -  Reply with: Martin McLaren
+Who will be the author of this web site? 
+	> Reply with: Martin McLaren
   
-> What will be the default language of this web site? 
-> Leave default or reply with:[en]
+What will be the default language of this web site? 
+	> Leave default or reply with:[en]
 
-> Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) 
-	reply with: y
+Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) 
+	> Reply with: y
 
-> What is your URL prefix? (see above example; no trailing slash)
-   - Reply with: [insert your username].github.io
+What is your URL prefix? (see above example; no trailing slash)
+	> Reply with: [insert your username].github.io
 
-> Do you want to enable article pagination? (Y/n) 
- - Reply with no.
+Do you want to enable article pagination? (Y/n) 
+	> Reply with no.
  
 > What is your time zone? [Europe/Rome] 
-> - Reply with: America/Winnipeg
+	> Reply with: America/Winnipeg
 
 > Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n)
-> Reply with: y
+	> Reply with: y
 
 Answer the next 5 questions with until:
 
