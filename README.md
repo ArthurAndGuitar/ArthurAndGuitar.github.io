@@ -1,20 +1,18 @@
-# README 
-
 # Instructions on Creating and Hosting a static website 
 Arthur McMullen 
 2025/03/04
 ## Table of Contents:
-[Purpose](#Purpose)
-[Prerequisites](#Prerequisites)
-[Instructions](#Instructions)
-	[Setting up distributed version control and Forge](#Setting-up-distributed-version-control-and-Forge)
-	[Making a website with Markdown](#Making-the-Website-with-MarkDown)
-	[Creating a static website](#Creating-the-Static-Website)
-	[Enabling GitHub Pages](Enabling-GitHub-Pages)
-	[Publishing Content onto the Website](#Publishing-Content-onto-the-Website)
-[Further Reading](#Further-Reading)
-[FAQ](#FAQ)
-[Credits](#Credits)
+- [Purpose](#Purpose)
+- [Prerequisites](#Prerequisites)
+- [Instructions](#Instructions)
+	- [Setting up distributed version control and Forge](#Setting-up-distributed-version-control-and-Forge)
+	- [Making a website with Markdown](#Making-the-Website-with-MarkDown)
+	- [Creating a static website](#Creating-the-Static-Website)
+	- [Enabling GitHub Pages](Enabling-GitHub-Pages)
+	-[Publishing Content onto the Website](#Publishing-Content-onto-the-Website)
+- [Further Reading](#Further-Reading)
+- [FAQ](#FAQ)
+- [Credits](#Credits)
 ## Purpose
 This is a guide for Martin McLaren on creating a static website to host a resume. Will be employing tools like Forges, Version Control and Static website generators to achieve this. Furthermore, will expand on Andrew Etters Principles of Modern Technical writing. Will use tools like VScode and GitHub to get familiar with tools developers use.
 ## Prerequisites 
