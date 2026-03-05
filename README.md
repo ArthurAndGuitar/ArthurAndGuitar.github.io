@@ -1,4 +1,4 @@
-# Instructions on Creating and Hosting a static website 
+# Creating a Website with Pelican and Hosting on GitHub
 Arthur McMullen 
 2025/03/04
 ## Table of Contents:
@@ -18,16 +18,20 @@ This is a guide for Marvin McLaren on creating a static website to host a resume
 ## Prerequisites 
 - A computer
 - A resume to host 
-- [VSCode](https://code.visualstudio.com/), a text editor will use for modifying files.
-- Pelican installed, will touch on this later 
-- [Git installed](https://git-scm.com/install/windows) for version control
-- A GitHub account, for a forge to host the website. [You can sign up here](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/signup&ved=2ahUKEwiL9IHr_4eTAxVVDjQIHShIG3wQFnoECAwQAQ&usg=AOvVaw0a6qEmIZVdziwPUb-hFApr)
 - A free evening or weekend and a Dr. pepper 
+
+| Program                                     | What it is                                            |
+| ------------------------------------------- | ----------------------------------------------------- |
+| [VSCode](https://code.visualstudio.com/)    | Software for editing files                            |
+| [Pelican](https://getpelican.com/)          | Converts markdown files into a static website         |
+| [Python](https://www.python.org/downloads/) | A programming language Pelican requires to run        |
+| [Git](https://git-scm.com/install/windows)  | Version Control                                       |
+| [GitHub Account](https://github.com/signup) | A forge for hosting our repository and website online |
 
 ## Instructions 
 
 ### Setting up distributed version control and Forge
-We will use Git for our distributed version control and GitHub for our forge. Git is the underlying mechanism that allows us to easily manage our system, create backups, and allow for collaboration if we so desire. As for technical writing, will want to use them because other developers use them. (Andrew Etter)
+We will use Git for our distributed version control and GitHub for our forge. Git is the underlying mechanism that allows us to easily manage our system, create backups, and allow for collaboration if we so desire. Etter recommends using these tools to get familiar with how programmers use them.
 
 Go to GitHub and create a new repository.
 > Repositories > new 
@@ -39,13 +43,13 @@ In the repository name field, enter:
 Will use this format to access GitHub Pages which is GitHubs free service for hosting static websites. 
 - Check that visibility is set to public.
 
-This is the URL for your static website that will need for later.
+Remember this URL for your static website for later.
 
 - Move the online repository onto your PC:
-	- Download GitHub Desktop app from: https://desktop.github.com/download/
-	- Run the executable
-	- Log into your GitHub desktop account
-	- clone the repository onto GitHub desktop.
+	1. Download GitHub Desktop app from: https://desktop.github.com/download/
+	2. Run the executable
+	3. Log into your GitHub desktop account
+	4. clone the repository onto GitHub desktop.
 		- click on "current repository" at the top left of the app.
 		- click on "add"
 		- click on "clone repository..."
@@ -56,146 +60,106 @@ This is the URL for your static website that will need for later.
 
 - Confirm in the GitHub Desktop App that the name of our repository is assigned the correct name, you can see the name on the top left of the app.
 
-### Making the Website with MarkDown
+### Making the Website with Markdown
 Will now design our website using a lightweight mark up language, in this case markdown. Static websites are made up of HTML which looks complicated and hard to read. Instead of bashing our heads against a wall, we can convert markdown, which is simple to learn and even easier to read, into HTML using a static website generator later.
 
 For that, will have to learn how to write in markdown. 
 
-[Here is a guide on some of the basic syntax](https://www.markdownguide.org/basic-syntax/).
-To make writing in markdown easier, will need a program to render the text, thankfully VSCode is able to somewhat render the files, but its missing some functionality. Instead, I would suggest trying [obsidian](https://obsidian.md/) which is a free and open source markdown rendering tool.
+[Here is a guide on some of the basic syntax for GitHub's flavor of markdown](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet).
+To make writing in markdown easier, will need a program to render the text. While VSCode is able to render the files, its missing functionality. Instead, I would suggest trying [obsidian](https://obsidian.md/) which is a free and open source markdown rendering tool.
 
+Keep in mind that at the top of the file, we need the text: 
+```
+title: [title of your webpage]
+date: [YYYY/MM/DD]
+```
 ### Creating the Static Website
 Etter recommends using a Static website generator to automate publishing our document over manually creating it. So, we will use a static website generator to turn a markdown document into a website written in HTML. 
 
-- navigate to the website folder you had assigned earlier in VSCode.
-	- Open: >file >open folder
+1. navigate to the website folder you had assigned earlier in VSCode.
+	- Open: > file > open folder
 		- Find the path to your project folder.
-		- Note: If you created the repository with the default path, it should look something like this: C:\Users\[your user name]\Documents\GitHub
+		- Note: If you created the repository with the default path, it should look something like this: C:\Users\[user]\Documents\GitHub
 
- Install pelican, if you already have it installed, you can skip this step
-	 - Make sure python is installed. 
-	 - [You can install Python here](https://www.python.org/downloads/)
-
-Run the command:
+2.  Install pelican by running the command in the VSCode terminal:
 ```
 python -m pip install "pelican[markdown]"
 ```
-this will install pelican.
 
-- Type In the terminal at the bottom of the VSCode:
+3. Type In the terminal at the bottom of the VSCode to start pelican's static website creation process:
 ```
 pelican-quickstart
 ```
-	- This will start pelican's static website creation process.
 
-- The console will prompt you with a few questions.
+4. Answer the following questions like so:
+![pelican_quickstart_Guide](images/comp3430_quickstart.png)
 
-What will be the title of this web site? 
-	- Reply with: [Enter the name of your website]
-	
-Who will be the author of this web site? 
-	- Reply with: Martin McLaren
-  
-What will be the default language of this web site? 
-	- Leave default or reply with:[en]
-
-Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) 
-	- Reply with: y
-
-What is your URL prefix? (see above example; no trailing slash)
-	- Reply with: [insert your username].github.io
-
-Do you want to enable article pagination? (Y/n) 
-	- Reply with no.
- 
-What is your time zone? [Europe/Rome] 
-	- Reply with: America/Winnipeg
-
-Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n)
-	- Reply with: y
-
-Answer the next 5 questions with until:
-
-Do you want to upload your website using GitHub Pages? (y/N) 
- 	- Type y to confirm yes, we are using GitHub pages.
-
-Is this your personal page (username.github.io)? (y/N) 
-	- Type y to confirm yes
-
-Confirm in VS code that the folders are generated
-
-- Navigate to your pelicanconf.py file.
-- Add the line:
+5. Navigate to your pelicanconf.py file.
+6. Add the line at the bottom of pelicanconf.py:
 	```
 	OUTPUT_PATH = 'docs'
 	``` 
-  at the bottom of the file.
-	- Without this, GitHub Pages wont know where to look to generate the static website.
+	- GitHub Pages requires this to know where to look to generate the static website.
 
-Either:
-- Place the markdown file you created into the content folder on VSCode
-- Create a new markdown file in the content folder
-	- it ends with .md
+7. Create a new markdown file in the content folder
+	- it ends with `.md`
 	- Copy and paste the lightweight markup context into markdown
 
-Convert the lightweight mark up language into HTML in Pelican by typing:
+8. Convert the lightweight mark up language into HTML in Pelican by typing:
 
 ```
 pelican content
 ```
 into the terminal 
 
-
-We can preview the website your hosting by typing:
+9. Preview the website your hosting by typing:
 ```
 pelican --listen
 ```
 into the terminal.
 
-Press CTRL + Click on the blue hyperlink in the console to make sure the website opens. It should look like this, the default theme.
+10. Use CTRL + Click on the blue hyperlink in the console to make sure the website opens. It should look like this, the default theme.
 
 ![Example website](images/example_website.png)
-
 ### Enabling GitHub Pages
 GitHub Pages is GitHub's way to allow users to host their own static websites. However, we have to enable this feature in our repository. GitHub is a forge which is a platform which hosts repositories, allows for collaboration, and version control. Because of it's ease of accessibility, shareability and proximity to developers, Etter recommends using them for technical documentation.
 
-- Navigate to your GitHub repository website.
-- click on the cog icon for the specific repository
+1. Navigate to your GitHub repository website.
+2. click on the cog icon for the specific repository
 ![find_gear](images/find_gear.png)
-- Enable the "Use your GitHub Pages website" option
+3.  Enable the "Use your GitHub Pages website" option
 
 To make sure GitHub Pages can find the output created by pelican's Static Forge, we must change where it looks.
 
-- Navigate to the GitHub repository website.
-- click on the repository's settings tab
-- click on "Pages" under "Code and automation" on the sidebar
-- Make sure the Source under Build and Deployment is set to "Deploy from a branch"
-- Make sure the branch is set to main 
-- Change the folder from "./root" to "./docs"
-- Make sure the result looks like this 
-
+1.  Navigate to the GitHub repository website.
+2.  click on the repository's settings tab
+3.  click on "Pages" under "Code and automation" on the sidebar
+4.  Make sure the Source under Build and Deployment is set to "Deploy from a branch"
+5.  Make sure the branch is set to main 
+6.  Change the folder from "./root" to "./docs"
+7.  Make sure the result looks like this 
 ![build and deploy](images/build_and_deploy.png)
-
 # Publishing Content onto the Website
 
 Now to change the contents of the webpage:
 - Navigate to the GitHub Desktop App
 - Type, in the summary required field, publish
 	- What you enter can be anything 
-	- Click Commit to main
-	- Push to Origin
+- Click Commit to main
+- Push to Origin
 		- this sends it to the website
 
-Now go check the website to make the sure the appropriate content is there.
-
-You did it!
+Check your website [insert your username].github.io to make sure the website is rendering. At this point, your all done.
 # Further Reading
 For further reading, you can check out:
 
 For use of GitHub Pages
 https://docs.github.com/en/pages/quickstart
 
-Using Obsidian:
+GitHub flavoured Markdown cheat sheet
+https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet
+
+On using Obsidian:
 https://obsidian.md/
 
 Viewing a variety of Pelican Themes:
@@ -205,10 +169,12 @@ https://pelicanthemes.com/
 ##### Q: Why am I getting [windows error 5] when running pelican content?
 A: That's because VSCode doesn't have permission to delete the contents of the docs folder, its likely an issue caused by Window's One Drive cloud service. Deleting the docs folder manually instead works perfectly. 
 
-##### Q: Why is it easier to use Markdown over HTML.
-A: Markdown has a simpler syntax and is significantly easier to read. 
+##### Q: Why is it called a static website
+A: A static website is opposite to a dynamic website, a dynamic website generates what it looks like when someone accesses it while a static website always remains the same and looks identical for everyone who accesses it .
 
 ## Credits
 
 - Nikolaas Christie 
-- Bradley Barrientos 
+- Bradley 
+
+
