@@ -8,7 +8,7 @@ Arthur McMullen
 	- [Setting up distributed version control and Forge](#Setting-up-distributed-version-control-and-Forge)
 	- [Making a website with Markdown](#Making-the-Website-with-MarkDown)
 	- [Creating a static website](#Creating-the-Static-Website)
-	- [Enabling GitHub Pages](Enabling-GitHub-Pages)
+	- [Enabling GitHub Pages](#Enabling-GitHub-Pages)
 	- [Publishing Content onto the Website](#Publishing-Content-onto-the-Website)
 - [Further Reading](#Further-Reading)
 - [FAQ](#FAQ)
