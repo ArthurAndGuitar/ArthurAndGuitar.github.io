@@ -14,7 +14,7 @@ Arthur McMullen
 - [FAQ](#FAQ)
 - [Credits](#Credits)
 ## Purpose
-This is a guide for Martin McLaren on creating a static website to host a resume. Will be employing tools like Forges, Version Control and Static website generators to achieve this. Furthermore, will expand on Andrew Etters Principles of Modern Technical writing. Will use tools like VScode and GitHub to get familiar with tools developers use.
+This is a guide for Marvin McLaren on creating a static website to host a resume. Will be employing tools like Forges, Version Control and Static website generators to achieve this. Furthermore, will expand on Andrew Etters Principles of Modern Technical writing. Will use tools like VScode and GitHub to get familiar with tools developers use.
 ## Prerequisites 
 - A computer
 - A resume to host 
