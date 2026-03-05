@@ -211,4 +211,4 @@ A: Markdown has a simpler syntax and is significantly easier to read.
 ## Credits
 
 - Nikolaas Christie 
-- Bradley 
+- Bradley Barrientos 
