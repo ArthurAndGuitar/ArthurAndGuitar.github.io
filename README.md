@@ -122,7 +122,7 @@ Do you want to upload your website using GitHub Pages? (y/N)
 Is this your personal page (username.github.io)? (y/N) 
 	- Type y to confirm yes
 
-Confirm in VS code
+Confirm in VS code that the folders are generated
 
 - Navigate to your pelicanconf.py file.
 - Add the line:
