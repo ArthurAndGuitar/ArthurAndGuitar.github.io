@@ -61,7 +61,7 @@ Remember this URL for your static website for later.
 
 - Confirm in the GitHub Desktop App that the name of our repository is assigned the correct name, you can see the name on the top left of the app.
 
-![Current repository](images/current_repo)
+![Current repository](images/current_repo.png)
 
 ### Making the Website with Markdown
 Will now design our website using a lightweight mark up language, in this case markdown. Static websites are made up of HTML which looks complicated and hard to read. Instead of bashing our heads against a wall, we can convert markdown, which is simple to learn and even easier to read, into HTML using a static website generator later.
