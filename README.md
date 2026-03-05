@@ -9,7 +9,7 @@ Arthur McMullen
 	- [Making a website with Markdown](#Making-the-Website-with-MarkDown)
 	- [Creating a static website](#Creating-the-Static-Website)
 	- [Enabling GitHub Pages](Enabling-GitHub-Pages)
-	-[Publishing Content onto the Website](#Publishing-Content-onto-the-Website)
+	- [Publishing Content onto the Website](#Publishing-Content-onto-the-Website)
 - [Further Reading](#Further-Reading)
 - [FAQ](#FAQ)
 - [Credits](#Credits)
@@ -63,7 +63,6 @@ For that, will have to learn how to write in markdown.
 
 [Here is a guide on some of the basic syntax](https://www.markdownguide.org/basic-syntax/).
 To make writing in markdown easier, will need a program to render the text, thankfully VSCode is able to somewhat render the files, but its missing some functionality. Instead, I would suggest trying [obsidian](https://obsidian.md/) which is a free and open source markdown rendering tool.
-
 
 ### Creating the Static Website
 Etter recommends using a Static website generator to automate publishing our document over manually creating it. So, we will use a static website generator to turn a markdown document into a website written in HTML. 
@@ -155,13 +154,14 @@ into the terminal.
 
 Press CTRL + Click on the blue hyperlink in the console to make sure the website opens. It should look like this, the default theme.
 
-![[Pasted image 20260304224631.png]]
+![Example website](images/example_website.png)
+
 ### Enabling GitHub Pages
 GitHub Pages is GitHub's way to allow users to host their own static websites. However, we have to enable this feature in our repository. GitHub is a forge which is a platform which hosts repositories, allows for collaboration, and version control. Because of it's ease of accessibility, shareability and proximity to developers, Etter recommends using them for technical documentation.
 
 - Navigate to your GitHub repository website.
 - click on the cog icon for the specific repository
-![[Pasted image 20260304140939.png]]
+![find_gear](images/find_gear.png)
 - Enable the "Use your GitHub Pages website" option
 
 To make sure GitHub Pages can find the output created by pelican's Static Forge, we must change where it looks.
@@ -173,7 +173,8 @@ To make sure GitHub Pages can find the output created by pelican's Static Forge,
 - Make sure the branch is set to main 
 - Change the folder from "./root" to "./docs"
 - Make sure the result looks like this 
-![[Pasted image 20260304141829.png]]
+
+![build and deploy](images/build_and_deploy.png)
 
 # Publishing Content onto the Website
 
@@ -208,3 +209,6 @@ A: That's because VSCode doesn't have permission to delete the contents of the d
 A: Markdown has a simpler syntax and is significantly easier to read. 
 
 ## Credits
+
+- Nikolaas Christie 
+- Bradley 
