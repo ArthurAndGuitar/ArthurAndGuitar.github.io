@@ -91,35 +91,35 @@ pelican-quickstart
 - The console will prompt you with a few questions.
 
 What will be the title of this web site? 
-	> Reply with: [Enter the name of your website]
+	- Reply with: [Enter the name of your website]
 	
 Who will be the author of this web site? 
-	> Reply with: Martin McLaren
+	- Reply with: Martin McLaren
   
 What will be the default language of this web site? 
-	> Leave default or reply with:[en]
+	- Leave default or reply with:[en]
 
 Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) 
-	> Reply with: y
+	- Reply with: y
 
 What is your URL prefix? (see above example; no trailing slash)
-	> Reply with: [insert your username].github.io
+	- Reply with: [insert your username].github.io
 
 Do you want to enable article pagination? (Y/n) 
-	> Reply with no.
+	- Reply with no.
  
-> What is your time zone? [Europe/Rome] 
-	> Reply with: America/Winnipeg
+What is your time zone? [Europe/Rome] 
+	- Reply with: America/Winnipeg
 
-> Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n)
-	> Reply with: y
+Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n)
+	- Reply with: y
 
 Answer the next 5 questions with until:
 
-> Do you want to upload your website using GitHub Pages? (y/N) 
+Do you want to upload your website using GitHub Pages? (y/N) 
  	- Type y to confirm yes, we are using GitHub pages.
- 
-> Is this your personal page (username.github.io)? (y/N) 
+
+Is this your personal page (username.github.io)? (y/N) 
 	- Type y to confirm yes
 
 Confirm in VS code
