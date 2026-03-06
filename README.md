@@ -64,7 +64,7 @@ Remember this URL for your static website for later.
 ![Current repository](images/current_repo)
 
 ### Making the Website with Markdown
-Will now design our website using a lightweight mark up language, in this case markdown. Static websites are made up of HTML which looks complicated and hard to read. Instead of bashing our heads against a wall, we can convert markdown, which is simple to learn and even easier to read, into HTML using a static website generator later.
+Will now design our website using a lightweight mark up language, in this case markdown. Static websites are made up of HTML which looks complicated and hard to read. Instead of bashing our heads against a wall, we can convert markdown, which is simple to learn and easier to read, into HTML using a static website generator later.
 
 For that, will have to learn how to write in markdown. 
 
@@ -119,7 +119,8 @@ into the terminal
 ```
 pelican --listen
 ```
-into the terminal.
+into the terminal. 
+- Use this command often, it allows us to preview and iterate quickly which follows in Etter's principles.
 
 10. Hold down CTRL on the keyboard and Click on the blue hyperlink in the console to make sure the website opens. The website should look like this, the default theme.
 
@@ -160,13 +161,13 @@ For further reading, you can check out:
 For use of GitHub Pages
 https://docs.github.com/en/pages/quickstart
 
-GitHub flavoured Markdown cheat sheet
+GitHub flavored Markdown cheat sheet
 https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet
 
 On using Obsidian:
 https://obsidian.md/
 
-Viewing a variety of Pelican Themes:
+For viewing a variety of Pelican Themes:
 https://pelicanthemes.com/
 # FAQ
 
@@ -174,11 +175,10 @@ https://pelicanthemes.com/
 A: That's because VSCode doesn't have permission to delete the contents of the docs folder, its likely an issue caused by Window's One Drive cloud service. Deleting the docs folder manually instead works perfectly. 
 
 ##### Q: Why is it called a static website
-A: A static website is opposite to a dynamic website, a dynamic website generates what it looks like when someone accesses it while a static website always remains the same and looks identical for everyone who accesses it .
-
+A: A static website is opposite of a dynamic website. An example of a dynamic website is twitter which can change what the site generates depending on data stored by the website. In contrast, a static website is more like a book, it doesn't hold any data that can change, so the website is fixed and will be the same for anyone who sees it. 
 ## Credits
 
 - Nikolaas Christie 
 - Bradley Barrientos
-
+- Pelican default theme by [Enrique Ramírez](https://enrique-ramirez.com)from [Smashing Magazine](https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/) 
 
