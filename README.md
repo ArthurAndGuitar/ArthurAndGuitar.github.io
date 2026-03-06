@@ -31,6 +31,11 @@ This is a guide for Marvin McLaren on creating a static website to host a resume
 
 ## Instructions 
 
+1. Set up a distributed version control and Forge
+2. Design a webpage with Markdown
+3. Convert the markdown file into a website
+4. Enable GitHub Pages
+5. Publish our website onto GitHub.
 ### Setting up distributed version control and Forge
 We will use Git for our distributed version control and GitHub for our forge. Git is the underlying mechanism that allows us to easily manage our system, create backups, and allow for collaboration. Etter recommends using these tools to get familiar with how programmers use them and allowing for easy contribution.
 
@@ -41,7 +46,7 @@ In the repository name field, enter:
 ```
 [insert your username].github.io
 ```
-Will use this format to access GitHub Pages which is GitHubs free service for hosting static websites. 
+Will use this format to access GitHub Pages which is GitHub's free service for hosting static websites. 
 - Check that visibility is set to public.
 
 Remember this URL for your static website for later.
@@ -61,7 +66,7 @@ Remember this URL for your static website for later.
 
 - Confirm in the GitHub Desktop App that the name of our repository is assigned the correct name, you can see the name on the top left of the app.
 
-![Current repository](images/current_repo.png)
+![Current repository](images/current_repo)
 
 ### Making the Website with Markdown
 Will now design our website using a lightweight mark up language, in this case markdown. Static websites are made up of HTML which looks complicated and hard to read. Instead of bashing our heads against a wall, we can convert markdown, which is simple to learn and easier to read, into HTML using a static website generator later.
@@ -69,7 +74,7 @@ Will now design our website using a lightweight mark up language, in this case m
 For that, will have to learn how to write in markdown. 
 
 [Here is a guide on some of the basic syntax for GitHub's flavor of markdown](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet).
-To make writing in markdown easier, will need a program to render the text. While VSCode is able to render the files, its missing functionality. Instead, I would suggest trying [obsidian](https://obsidian.md/) which is a free and open source markdown rendering tool.
+To make writing in markdown easier, will need a program to render the text. While VSCode is able to render the files, its missing functionality. Instead, I would suggest trying [obsidian](https://obsidian.md/) which is a free markdown rendering tool.
 
 Keep in mind that at the top of the file, we need the text: 
 ```
@@ -126,7 +131,7 @@ into the terminal.
 
 ![Example website](images/example_website.png)
 ### Enabling GitHub Pages
-GitHub Pages is GitHub's way to allow users to host their own static websites. However, we have to enable this feature in our repository. GitHub is a forge which is a platform which hosts repositories, allows for collaboration, and version control. Because of it's ease of accessibility, shareability and proximity to developers, Etter recommends using static websites for technical documentation.
+GitHub Pages is GitHub's way to allow users to host their own static websites. However, we have to enable this feature in our repository. GitHub is a forge which is a platform which hosts repositories, allows for collaboration, and version control. Because of its ease of accessibility, shareability and proximity to developers, Etter recommends using static websites for technical documentation.
 
 1. Navigate to your GitHub repository website.
 2. Click on the cog icon for the specific repository
@@ -144,7 +149,7 @@ To make sure GitHub Pages can find the output created by pelican's Static Forge,
 7.  Make sure the result looks like this 
 ![build and deploy](images/build_and_deploy.png)
 # Publishing Content onto the Website
-Making publishing simple is paramount for easy iteration, one of etter's principles.
+Making publishing simple is paramount for easy iteration, one of Etter's principles.
 
 Now to change the contents of the webpage:
 - Navigate to the GitHub Desktop App
@@ -154,7 +159,7 @@ Now to change the contents of the webpage:
 - Push to Origin
 	- this sends it to the website
 
-Check your website [insert your username].github.io to make sure the website is rendering. At this point, your all done.
+Check your website at [insert your username].github.io to make sure it's rendering. At this point, you're all done.
 # Further Reading
 For further reading, you can check out:
 

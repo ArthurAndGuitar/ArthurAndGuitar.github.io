@@ -2,13 +2,13 @@ title: Resume_2
 date: 2026/03/05
 
 # Arthur McMullen
-22 John St, Johnnypeg, Johntoba, Johnda J0H2N3 
+22 John St, Winnipeg, Manitoba, Canada J0H2N3 
 Mobile (431) - XXX - XXXX 
-John.Johnjohnny@johnmail.com
+John.John@gmail.com
 
 Education:
-University of John Faculty of Science       2020 - Current
-John Massey Collegiate - French Immersion (with distinction) 2016- 2020 
+University of Manitoba Faculty of Science       2020 - Current
+Vincent Massey Collegiate - French Immersion (with distinction) 2016 - 2020 
 
 Relevant Work Experience
 
